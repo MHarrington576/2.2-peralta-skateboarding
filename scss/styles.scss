@@ -3,6 +3,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /*Color Palette*/
 $wh: #FFFFFF;
+$rd: #C40018;
+
+.container{
+  background-image: url('../images/bg.jpg');
+}
 
 body {
   box-sizing: border-box;
