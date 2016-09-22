@@ -1,21 +1,208 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "https://fonts.googleapis.com/css?family=Raleway";
 
 /*Color Palette*/
 $wh: #FFFFFF;
 $rd: #C40018;
+$gr: #ACACAC;
+$ow: #FCFCFC;
 
-.container{
-  background-image: url('../images/bg.jpg');
+/*Mixins*/
+@mixin revert-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
 }
 
-body {
+@mixin revert-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin format-box{
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*General Layout*/
+body{
+  background-image: url('../images/bg.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+body{
   box-sizing: border-box;
-  background-color: gray;
+}
+
+/*Heading*/
+.social-nav{
+  float: right;
 }
 
 .subscribe {
-  text-decoration: none;
-  text-transform: uppercase;
+  @include revert-link;
   color: $wh;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.social-media-icons{
+  @include revert-list;
+  display: inline-block;
+}
+
+.fa-facebook-official, .fa-rss-square, .fa-twitter-square, .fa-youtube-square{
+  height: 60px;
+}
+
+.main-nav-l1, .main-nav-l2, .main-nav-l3, .main-nav-l4{
+  @include revert-link;
+  text-align: center;
+  background-color: $rd;
+  display: block;
+  height: 30px;
+  padding-top: 3px;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+  font-size: 17px;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5)
+}
+
+.heading-carousel{
+  background-image: url('../images/top-image.png');
+  background-position: 40% 25%;
+  background-size: auto;
+  height: 337px;
+  width: auto;
+  border: 8px solid white;
+  margin-bottom: 25px;
+}
+
+.peralta-logo-container{
+  height: 337px;
+  text-align: center;
+}
+
+.peralta-logo{
+  float: left;
+  display: inline-block;
+  padding-top: 10%;
+}
+
+.weird-grid-thing{
+  position: absolute;
+  opacity: 0.25;
+  height: 330px;
+  width: 100%;
+}
+
+.article-1, .article-2, .article-3{
+  background-color: white;
+  height: 350px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+}
+
+@media (max-width: 750px){
+  .article-1, .article-2, .article-3{
+    height: 200px;
+  }
+}
+
+.article-1-title, .article-2-title, .article-3-title{
+  margin-bottom: 5px;
+}
+
+.article-1-date, .article-2-date, .article-3-date{
+  color: $gr;
+  margin-bottom: 5px;
+}
+
+.read-more-box{
+  text-align: center;
+}
+
+.read-more{
+  @include revert-link;
+  color: $rd;
+  font-weight: bolder;
+}
+
+.boarder-lm{
+  display: inline-block;
+  position: absolute;
+  height: 222px;
+}
+
+.boarder-lm-name, .boarder-rm-name, .boarder-sc-name, .boarder-tg-name{
+  color: $wh;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.board-showcase{
+  background-color: $wh;
+  margin-bottom: 25px;
+}
+
+.board-1{
+  margin-left: 26px;
+}
+
+.board-2, .board-3, .board-4, .board-5, .board-6, .board-7, .board-8, .board-9{
+  margin-left: 26px;
+}
+
+.board-10{
+  margin-left: 21px;
+}
+
+.entire-form{
+  height: 362px;
+  background-color: $ow;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 25px;
+}
+
+.contact-info{
+  line-height: 2.0;
+}
+
+.name-input, .email-input, .message-input{
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 425px;
+  padding: 10px;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.message-input{
+  padding-bottom: 50px;
+}
+
+.form-submit{
+  display: block;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-right: 15px;
+  background-color: $rd;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 115px;
+  padding-right: 115px;
+  color: $wh;
+  border: none;
 }
