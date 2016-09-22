@@ -1,12 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://fonts.googleapis.com/css?family=Francois+One|Raleway";
 
 /*Color Palette*/
 $wh: #FFFFFF;
 $rd: #C40018;
 $gr: #ACACAC;
 $ow: #FCFCFC;
+$fb-lg: #465199;
+$fd-lg: #D58F1A;
+$tw-lg: #6689C9;
+$yt-lg: #C21F17;
 
 /*Mixins*/
 @mixin revert-link{
@@ -23,8 +27,17 @@ $ow: #FCFCFC;
 }
 
 @mixin format-box{
-  font-family: 'Raleway', sans-serif;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@mixin format-name{
+  color: $wh;
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*General Layout*/
@@ -45,30 +58,50 @@ body{
 
 .subscribe {
   @include revert-link;
+  position: relative;
+  bottom: 14px;
   color: $wh;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .social-media-icons{
   @include revert-list;
   display: inline-block;
+  position: relative;
+  left: 81px;
 }
 
 .fa-facebook-official, .fa-rss-square, .fa-twitter-square, .fa-youtube-square{
   height: 60px;
 }
 
+.fa-facebook-official{
+  color: $fb-lg;
+}
+
+.fa-rss-square{
+  color: $fd-lg;
+}
+
+.fa-twitter-square{
+  color: $tw-lg;
+}
+
+.fa-youtube-square{
+  color: $yt-lg;
+}
+
 .main-nav-l1, .main-nav-l2, .main-nav-l3, .main-nav-l4{
   @include revert-link;
+  @include format-box;
   text-align: center;
   background-color: $rd;
   display: block;
   height: 30px;
   padding-top: 3px;
   margin-bottom: 16px;
-  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
   font-size: 17px;
-  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5)
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5)
 }
 
 .heading-carousel{
@@ -100,6 +133,7 @@ body{
 }
 
 .article-1, .article-2, .article-3{
+  @include format-box;
   background-color: white;
   height: 350px;
   font-family: 'Raleway', sans-serif;
@@ -107,7 +141,6 @@ body{
   padding-right: 10%;
   padding-top: 2%;
   padding-bottom: 2%;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
   margin-bottom: 25px;
 }
 
@@ -136,21 +169,110 @@ body{
   font-weight: bolder;
 }
 
-.boarder-lm{
-  display: inline-block;
-  position: absolute;
-  height: 222px;
-}
-
-.boarder-lm-name, .boarder-rm-name, .boarder-sc-name, .boarder-tg-name{
+aside{
+  @include format-box;
+  background-color: $rd;
   color: $wh;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.top-left-boarder{
+  height: 222px;
+  width: 293px;
+  border: 4px solid white;
+}
+
+.boarder-lm{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.boarder-lm-name{
+  @include format-name;
+  left: 27px;
+  bottom: 182px;
+  font-size: 55px;
+}
+
+.top-middle-boarder{
+  height: 222px;
+  width: 293px;
+  border: 4px solid white;
+  position: relative;
+  left: 293px;
+  bottom: 222px;
+}
+
+.boarder-rm{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.boarder-rm-name{
+  @include format-name;
+  font-size: 55px;
+  left: 48px;
+  bottom: 183px;
+}
+
+.bottom-left-boarder{
+  width: 601px;
+  height: 222px;
+  border: 4px solid white;
+  position: relative;
+  right: 15px;
+  bottom: 207px;
+}
+
+.boarder-sc{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.boarder-sc-name{
+  @include format-name;
+  font-size: 55px;
+  left: 90px;
+  bottom: 155px;
+}
+
+.right-boarder{
+  height: 460px;
+  width: 324px;
+  position: relative;
+  right: 27px;
+  border: 4px solid white;
+}
+
+.boarder-tg{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.boarder-tg-name{
+  @include format-name;
+  font-size: 55px;
+  bottom: 304px;
+  left: 39px;
 }
 
 .board-showcase{
+  @include format-box;
   background-color: $wh;
   margin-bottom: 25px;
+  position: relative;
+  bottom: 190px;
 }
 
 .board-1{
@@ -166,14 +288,21 @@ body{
 }
 
 .entire-form{
+  @include format-box;
   height: 362px;
   background-color: $ow;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 25px;
+  position: relative;
+  bottom: 195px;
 }
 
 .contact-info{
   line-height: 2.0;
+}
+
+.social-nav-form{
+  margin-top: 15px;
 }
 
 .name-input, .email-input, .message-input{
