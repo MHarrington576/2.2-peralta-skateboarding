@@ -5931,17 +5931,18 @@ aside {
   background-color: #C40018;
   color: #FFFFFF;
   font-family: 'Francois One', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
   position: relative;
-  padding: 7px;
-  margin-bottom: 10px; }
+  padding: 12px;
+  margin-top: -9px;
+  margin-bottom: 15px; }
 
 .top-left-boarder {
   height: 222px;
-  width: 293px;
+  width: 377px;
   border: 4px solid white; }
 
 .boarder-lm {
@@ -5957,16 +5958,16 @@ aside {
   display: inline-block;
   position: relative;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-  left: 27px;
+  left: 63px;
   bottom: 182px;
   font-size: 55px; }
 
 .top-middle-boarder {
   height: 222px;
-  width: 293px;
+  width: 372px;
   border: 4px solid white;
   position: relative;
-  left: 293px;
+  left: 377px;
   bottom: 222px; }
 
 .boarder-rm {
@@ -5983,16 +5984,16 @@ aside {
   position: relative;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 55px;
-  left: 48px;
+  left: 90px;
   bottom: 183px; }
 
 .bottom-left-boarder {
-  width: 601px;
+  width: 765px;
   height: 222px;
   border: 4px solid white;
   position: relative;
   right: 15px;
-  bottom: 207px; }
+  bottom: 206px; }
 
 .boarder-sc {
   display: inline-block;
@@ -6008,14 +6009,13 @@ aside {
   position: relative;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 55px;
-  left: 90px;
+  left: 180px;
   bottom: 155px; }
 
 .right-boarder {
   height: 460px;
-  width: 324px;
+  width: 360px;
   position: relative;
-  right: 27px;
   border: 4px solid white; }
 
 .boarder-tg {
@@ -6033,7 +6033,7 @@ aside {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 55px;
   bottom: 304px;
-  left: 39px; }
+  left: 55px; }
 
 .board-showcase {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -6043,13 +6043,13 @@ aside {
   bottom: 190px; }
 
 .board-1 {
-  margin-left: 26px; }
+  margin-left: 40px; }
 
 .board-2, .board-3, .board-4, .board-5, .board-6, .board-7, .board-8, .board-9 {
-  margin-left: 26px; }
+  margin-left: 44px; }
 
 .board-10 {
-  margin-left: 21px; }
+  margin-left: 40px; }
 
 .entire-form {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -6070,8 +6070,8 @@ aside {
   display: block;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  margin-top: 15px;
-  width: 425px;
+  margin-top: 20px;
+  width: 525px;
   padding: 10px;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
   border: none; }
