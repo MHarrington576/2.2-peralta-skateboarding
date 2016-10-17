@@ -190,7 +190,8 @@ aside{
 
 .top-left-boarder{
   height: 222px;
-  width: 377px;
+  padding: 0;
+  // width: 377px;
   border: 4px solid white;
 }
 
@@ -209,11 +210,11 @@ aside{
 
 .top-middle-boarder{
   height: 222px;
-  width: 372px;
+  // width: 372px;
   border: 4px solid white;
-  position: relative;
-  left: 377px;
-  bottom: 222px;
+  // position: relative;
+  // left: 377px;
+  // bottom: 222px;
 }
 
 .boarder-rm{
@@ -233,9 +234,10 @@ aside{
   width: 765px;
   height: 222px;
   border: 4px solid white;
-  position: relative;
-  right: 15px;
-  bottom: 206px;
+  margin: -15px;
+  // position: relative;
+  // right: 15px;
+  // bottom: 206px;
 }
 
 .boarder-sc{
@@ -275,8 +277,8 @@ aside{
   @include format-box;
   background-color: $wh;
   margin-bottom: 25px;
-  position: relative;
-  bottom: 190px;
+  // position: relative;
+  // bottom: 190px;
 }
 
 .board-showcase-2{
@@ -307,6 +309,8 @@ aside{
 
 .board-2, .board-3, .board-4, .board-5, .board-6, .board-7, .board-8, .board-9{
   margin-left: 44px;
+//@media xs
+//transform: rotate(0.5turn)
 }
 
 .board-10{
@@ -315,12 +319,12 @@ aside{
 
 .entire-form{
   @include format-box;
-  height: 362px;
+  overflow: auto;
   background-color: $ow;
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 25px;
-  position: relative;
-  bottom: 195px;
+  padding-bottom: 25px;
+  // position: relative;
+  // bottom: 195px;
 }
 
 .contact-info{
@@ -336,7 +340,7 @@ aside{
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   margin-top: 20px;
-  width: 525px;
+  width: 100%;
   padding: 10px;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
   border: none;
