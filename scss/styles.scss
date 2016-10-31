@@ -146,6 +146,7 @@ body{
   padding-top: 2%;
   padding-bottom: 2%;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 @media (max-width: 750px){
@@ -268,12 +269,12 @@ aside{
 }
 
 .right-boarder{
-  height: 454px;
+  height: 469px;
   // width: 360px;
   // position: relative;
 
   margin-bottom: 15px;
-  margin-left: -5px;
+  // margin-left: -5px;
 }
 
 .boarder-tg{
@@ -295,6 +296,7 @@ aside{
 
 .boarder-container {
   margin-bottom: 25px;
+  margin-left: -15px;
 }
 
 .board-showcase{
