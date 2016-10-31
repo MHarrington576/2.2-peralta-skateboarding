@@ -5948,11 +5948,7 @@ aside {
   margin-left: 0px; }
 
 .top-left-boarder {
-  width: 50%;
-  height: 222px;
-  padding: 0;
-  border: 4px solid white;
-  margin-bottom: 25px; }
+  height: 222px; }
 
 .boarder-lm {
   display: inline-block;
@@ -5978,9 +5974,7 @@ aside {
   .top-middle-boarder {
     height: 1000px; } }
 .top-middle-boarder {
-  width: 103%;
-  height: 222px;
-  border: 4px solid white; }
+  height: 222px; }
 
 .boarder-rm {
   display: inline-block;
@@ -6000,10 +5994,7 @@ aside {
   bottom: 183px; }
 
 .bottom-left-boarder {
-  width: 765px;
-  height: 222px;
-  border: 4px solid white;
-  margin: -15px; }
+  height: 222px; }
 
 .boarder-sc {
   display: inline-block;
@@ -6024,9 +6015,6 @@ aside {
 
 .right-boarder {
   height: 454px;
-  width: 360px;
-  position: relative;
-  border: 4px solid white;
   margin-bottom: 15px;
   margin-left: -5px; }
 
@@ -6046,6 +6034,12 @@ aside {
   font-size: 55px;
   bottom: 304px;
   left: 55px; }
+
+.boarder-img {
+  border: 4px solid white; }
+
+.boarder-container {
+  margin-bottom: 25px; }
 
 .board-showcase {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
